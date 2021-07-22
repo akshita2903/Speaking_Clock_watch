@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+<link href="CSS/popup.css" rel="stylesheet">
+</head>
+<body onload="date()">
+  <h3>CLOCK ON YOUR HANDS</h3>
+  <div id="main_body">
+    <div id="main">
+      <h2 id="mains"></h2>
+  </div> 
+    <div class="inputs">
+ <p>First select alarm time then click set ALarm</p>     
+<label for="why">Reason for setting alarm <input type="text" id="why"></label>
+ <label for="ac" id="al"><input type="radio" name="clock" id="ac" >SET ALARM</label>
+ <span id="select">
+ <select id="hours">
+   
+ </select>
+ <select id="min">
+  
+</select>
+<select id="sec">
+ 
+</select>
+<select id="ampm">
+  
+</select>
+</span>
+<br>
+<p id="stop" >STOP WATCH</p>
+ <!-- <label for="sw"><input type="radio" name="clock" id="sw">START</label> -->
+ <button type="submit" id="sw">Start</button>
+ <span id="time">00:00:00</span>
+ <button type="submit" onclick="stop()">Stop</button>
+ <button type="submit" onclick="reset()">Reset</button>
+
+ 
+</div>
+  
+</div>
+  <script src="js/setalarm.js">
+</script>
+<script src="js/setwatch.js"></script>
+<script src="popup.js"></script>
+
+</body>
